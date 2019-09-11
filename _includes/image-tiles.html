@@ -1,0 +1,48 @@
+            <!-- section -->
+            <section class="gla_section gla_image_bck">
+
+
+                    <div class="container text-center">
+                        <p>
+                            <img src="images/animations/flower7.gif" data-bottom-top="@src:images/animations/flower7.gif; opacity:1" class="gla_animated_flower"
+                                height="110" alt="">
+                        </p>
+                        <h2>The Day They Got Engaged</h2>
+                        <p>Andy and Jeska met in university in the Graphic Design program. They both remember each other from orientation,
+                            but it wasn’t love at first sight, that’s for sure. Andy remembers Jeska as a ‘snooty art bitch (having
+                            been in the visual arts program at the time), and she remembers Andy being an ‘arrogant computer
+                            nerd’, boasting his knowledge of Macs over the other students.</p>
+    
+                        <!-- filters -->
+                        <div class="button-group filter-button-group">
+                            <a data-filter="*">Show All</a>
+                            <a data-filter=".engagement">Engagement</a>
+                            <a data-filter=".ceremony">Ceremony</a>
+                        </div>
+                        <!-- filters end -->
+    
+                        <!-- grid -->
+                        <div class="gla_portfolio_no_padding grid">
+                            {% for image in site.static_files %}    
+                                {% if image.path contains 'images/wedding' %}
+                                    <div class="col-sm-4 gla_anim_box grid-item engagement">
+                                        <div class="gla_shop_item">
+                                            <a href="{{ site.baseurl }}{{ image.path }}" class="lightbox">
+                                                <!-- <img src="http://placehold.it/600x600" alt=""> -->
+                                                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+    
+                        </div>
+                        <!-- grid end -->
+    
+    
+    
+                    </div>
+                    <!-- container end -->
+    
+                </section>
+                <!-- section end -->
