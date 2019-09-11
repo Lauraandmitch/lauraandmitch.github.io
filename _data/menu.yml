@@ -1,0 +1,10 @@
+menu:
+
+- title: Location
+  url: location.html
+
+- title: RSVP
+  url: rsvp.html
+
+- title: Contact
+  url: /contact/
