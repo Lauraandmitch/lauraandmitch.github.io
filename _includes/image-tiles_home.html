@@ -1,0 +1,38 @@
+            <!-- section -->
+            <section class="gla_section gla_image_bck">
+
+
+                <div class="container text-center">
+                    <p>
+                        <img src="images/animations/flower7.gif" data-bottom-top="@src:images/animations/flower7.gif; opacity:1" class="gla_animated_flower"
+                            height="110" alt="">
+                    </p>
+                    <h2>The Day They Got Engaged</h2>
+                    <p>Every year for our anniversary we plan a hike. On our fourth anniversary we decided to celebrate the day with one of our favourite hikes at Square Rock in Canberra’s Namadgi National Park. 
+                        We’ve always loved the views so we got up before dawn to make sure we could watch the sun rise on our day. At top we took the next step in our adventure together, we said yes!</p>
+
+                    <!-- grid -->
+                    <div class="gla_portfolio_no_padding grid">
+                        {% for image in site.static_files %}    
+                            {% if image.path contains 'images/home_gallery' %}
+                                <div class="col-sm-4 gla_anim_box grid-item engagement">
+                                    <div class="gla_shop_item">
+                                        <a href="{{ site.baseurl }}{{ image.path }}" class="lightbox">
+                                            <!-- <img src="http://placehold.it/600x600" alt=""> -->
+                                            <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                                        </a>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+
+                    </div>
+                    <!-- grid end -->
+
+
+
+                </div>
+                <!-- container end -->
+
+            </section>
+            <!-- section end -->

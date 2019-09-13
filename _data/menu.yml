@@ -6,5 +6,8 @@ menu:
 - title: RSVP
   url: rsvp.html
 
-- title: Contact
-  url: /contact/
+# - title: Contact
+#   url: contact.html
+
+- title: Gallery
+  url: gallery.html
