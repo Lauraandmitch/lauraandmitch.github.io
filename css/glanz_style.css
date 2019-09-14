@@ -412,6 +412,9 @@ blockquote footer {
 	background: rgba(255,255,255,0.1);
 	color: #fff;
 }
+.gla_wht_txt .form-control option{
+	color: #000;
+}
 .gla_wht_txt .form-control::-webkit-input-placeholder {color:#fff!important;}
 .gla_wht_txt .form-control::-moz-placeholder          {color:#fff!important;}
 .gla_wht_txt .form-control:-moz-placeholder           {color:#fff!important;}
